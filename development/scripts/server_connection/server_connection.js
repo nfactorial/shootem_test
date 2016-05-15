@@ -1,13 +1,13 @@
-var ServerConnection = function(gameController, url) {
+var ServerConnection = function(/*gameController,*/ url) {
     if(!(this instanceof ServerConnection)) {
         throw 'ServerConnection called as function rather than constructor.';
     }
 
-    if(!gameController) {
+/*    if(!gameController) {
         throw 'ServerConnection must be constructed with a valid game controller.';
     }
-
-    this.gameController = gameController;
+*/
+//    this.gameController = gameController;
     this.isConnected = false;
     this.url = url;
     console.log('Attempting connection to ' + url);
@@ -33,7 +33,7 @@ var ServerConnection = function(gameController, url) {
 ServerConnection.prototype.onConnected = function() {
     console.log('Connection to server established.');
     this.isConnected = true;
-    this.gameController.emit(GAME_EVENTS.CONNECTED);
+//    this.gameController.emit(GAME_EVENTS.CONNECTED);
 };
 
 /**
@@ -42,7 +42,7 @@ ServerConnection.prototype.onConnected = function() {
 ServerConnection.prototype.onDisconnect = function() {
     console.log('Disconnected from server.');
     this.isConnected = false;
-    this.gameController.emit(GAME_EVENTS.DISCONNECT);
+//    this.gameController.emit(GAME_EVENTS.DISCONNECT);
 };
 
 /**
