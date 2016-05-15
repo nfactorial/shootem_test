@@ -3,6 +3,11 @@ pc.script.attribute('camera', 'entity', null, {
     description: 'Camera for teams view into the scene.'
 });
 
+pc.script.attribute('tankTemplate', 'entity', null, {
+    displayName: 'Tank Template',
+    description: 'Template object for all tank units.'
+});
+
 /**
  * This script describes a team within the running game.
  * There are two teams, the server will let us know which team the local

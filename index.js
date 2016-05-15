@@ -5,4 +5,4 @@ const scripts = new ScriptServer();
 const game = new GameServer();
 
 scripts.run(__dirname, '/development');
-game.run();
+game.run(9000);
