@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests --recursive",
-    "server": "node index.js",
+    "start": "node index.js",
     "debug": "DEBUG=express:* & node index.js"
   },
   "author": "nfactorial",
