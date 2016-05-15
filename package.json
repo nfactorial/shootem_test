@@ -4,7 +4,9 @@
   "description": "Simple game for PlayCanvas.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha tests --recursive",
+    "server": "node index.js",
+    "debug": "DEBUG=express:* & node index.js"
   },
   "author": "nfactorial",
   "license": "ISC",

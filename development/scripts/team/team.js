@@ -46,5 +46,5 @@ pc.script.create('team', function (app) {
         }
     };
 
-    return TankController;
+    return Team;
 });
