@@ -1,0 +1,14 @@
+{
+  "name": "shootem_test",
+  "version": "0.0.1",
+  "description": "Simple game for PlayCanvas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "nfactorial",
+  "license": "ISC",
+  "dependencies": {
+    "@nfactorial/playcanvas_server": "^1.0.1"
+  }
+}
