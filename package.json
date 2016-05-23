@@ -8,9 +8,15 @@
     "start": "node index.js",
     "debug": "DEBUG=express:* & node index.js"
   },
+  "engines": {
+    "node": "6.1.0"
+  },
   "author": "nfactorial",
   "license": "ISC",
   "dependencies": {
     "@nfactorial/playcanvas_server": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }

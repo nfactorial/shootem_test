@@ -4,7 +4,7 @@
 pc.script.create('local', function(app) {
     var LocalMachine = function(entity) {
         this,entity = entity;
-        this.server = null;
+        this.serverConnection = null;
     };
 
     LocalMachine.prototype = {
@@ -16,7 +16,7 @@ pc.script.create('local', function(app) {
 
             var selectedServer = 'default';
 
-            this.server = new ServerConnection(servers[selectedServer]);
+            this.serverConnection = new ServerConnection(servers[selectedServer]);
         },
 
         update: function(dt) {
