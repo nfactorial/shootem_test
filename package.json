@@ -11,9 +11,14 @@
   "engines": {
     "node": "6.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfactorial/shootem_test.git"
+  },
   "author": "nfactorial",
   "license": "ISC",
   "dependencies": {
+    "@nfactorial/factory_node": "0.0.1",
     "@nfactorial/playcanvas_server": "^1.0.2"
   },
   "devDependencies": {
