@@ -20,7 +20,7 @@
   "dependencies": {
     "@nfactorial/factory_node": "0.0.1",
     "@nfactorial/game_state_js": "0.0.4",
-    "@nfactorial/playcanvas_server": "^1.0.12",
+    "@nfactorial/playcanvas_server": "^1.0.13",
     "dotenv": "^2.0.0"
   },
   "devDependencies": {
