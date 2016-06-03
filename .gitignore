@@ -13,3 +13,6 @@ build
 
 # Do not version control aws security credentials
 aws
+
+# Do not version control environment file
+.env

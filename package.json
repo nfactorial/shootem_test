@@ -19,7 +19,9 @@
   "license": "ISC",
   "dependencies": {
     "@nfactorial/factory_node": "0.0.1",
-    "@nfactorial/playcanvas_server": "^1.0.2"
+    "@nfactorial/game_state_js": "0.0.4",
+    "@nfactorial/playcanvas_server": "^1.0.10",
+    "dotenv": "^2.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0"

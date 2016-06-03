@@ -1,0 +1,33 @@
+{
+    "name": "shootem_test",
+    "main": "matchmaking",
+    "states": [
+        {
+            "name": "session",
+            "children": [
+                "matchmaking", "gameplay", "game_over"
+            ],
+            "systems": [
+                "TeamManager"
+            ]
+        },
+        {
+            "name": "matchmaking",
+            "systems": [
+                "MatchWaiting"
+            ]
+        },
+        {
+            "name": "gameplay",
+            "systems": [
+                "Gameplay"
+            ]
+        },
+        {
+            "name": "game_over",
+            "systems": [
+                "GameOver"
+            ]
+        }
+    ]
+}

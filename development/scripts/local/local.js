@@ -10,11 +10,12 @@ pc.script.create('local', function(app) {
     LocalMachine.prototype = {
         initialize: function() {
             var servers = {
-                'local': 'http://ec2-54-171-242-80.eu-west-1.compute.amazonaws.com:9000/socket',
+                'local': 'http://127.0.0.1:9000/socket',
                 'default': 'http://ec2-54-171-242-80.eu-west-1.compute.amazonaws.com:9000/socket'
             };
 
-            var selectedServer = 'default';
+            //var selectedServer = 'default';
+            var selectedServer = 'local';
 
             this.serverConnection = new ServerConnection(servers[selectedServer]);
         },
