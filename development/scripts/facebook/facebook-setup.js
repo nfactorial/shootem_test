@@ -4,9 +4,12 @@
     var _inst = null;
     var app = null;
 
+    var playcanvasAppId = '193669744362656';
+    var awsAppId = '666582873493792';
+
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '666582873493792',
+            appId      : playcanvasAppId,
             xfbml      : true,
             version    : 'v2.5'
         });

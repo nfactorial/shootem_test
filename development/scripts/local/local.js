@@ -3,7 +3,7 @@
  */
 pc.script.create('local', function(app) {
     var LocalMachine = function(entity) {
-        this,entity = entity;
+        this.entity = entity;
         this.isReady = false;
         this.serverConnection = null;
 
@@ -17,7 +17,10 @@ pc.script.create('local', function(app) {
 
             var self = this;
             app.on('fb:init', function() {
+                console.log('LocalMachine.initialize - fb:init');
+
                 this.isReady = true;
+                console.log(FB);
                 FB.getLoginStatus(self.onLoginChanged);
             }, this);
 
@@ -39,11 +42,17 @@ pc.script.create('local', function(app) {
          * @param response
          */
         onLoginChanged: function(response) {
+            console.log('onLoginChanged');
+
             if (response.status === 'connected') {
+                console.log('onLoginChanged - connected');
+
                 this.showLogout();
                 this.hideLogin();
                 app.fire('app:fblogin');
             } else {
+                console.log('onLoginChanged - disconnected');
+
                 this.showLogin();
                 this.hideLogout();
                 app.fire('app:fblogout');
@@ -53,8 +62,12 @@ pc.script.create('local', function(app) {
         showLogin: function() {
             var self = this;
 
+            console.log('showLogin');
+
             var login = document.querySelector('.fb-login');
             if (login) {
+                console.log('showLogin - display = block');
+
                 login.style.display = 'block';
                 if (!this._loginHandler) {
                     this._loginHandler = function() {
@@ -80,8 +93,11 @@ pc.script.create('local', function(app) {
         showLogout: function() {
             var self = this;
 
+            console.log('showLogout');
+
             var logout = document.querySelector('.fb-logout');
             if (logout) {
+                console.log('showLogout - display = block');
                 logout.style.display = 'block';
 
                 if (!this._logOutHandler) {
