@@ -8,7 +8,7 @@
                 "matchmaking", "gameplay", "game_over"
             ],
             "systems": [
-                "TeamManager"
+                "Game", "TeamManager"
             ]
         },
         {

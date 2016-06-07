@@ -16,6 +16,7 @@ const game = new GameServer();
  */
 const systemFactory = new Factory();
 
+systemFactory.register('Game', require('./lib/game_systems/game'));
 systemFactory.register('MatchWaiting', require('./lib/game_systems/match_waiting'));
 systemFactory.register('TeamManager', require('./lib/game_systems/team_manager'));
 
