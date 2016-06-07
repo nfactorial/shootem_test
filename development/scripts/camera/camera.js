@@ -32,7 +32,7 @@ pc.script.create('camera_video', function(app) {
                             audio: false
                         }, function(stream) {
                             videoElement.src = window.URL.createObjectURL(stream);
-                        })
+                        });
                     });
 
                     app.on('app:fblogout', function() {
